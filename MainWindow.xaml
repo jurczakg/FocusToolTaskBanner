@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Focus Tool Task Banner" Height="200" Width="800"
          Topmost="{Binding Source={x:Static Application.Current},Path=MainWindow.IsActive,Mode=OneWay}"
-        Icon="/images/file.ico">  
+        Icon="/images/focus.ico">  
   
  
  <Grid Margin="10">
