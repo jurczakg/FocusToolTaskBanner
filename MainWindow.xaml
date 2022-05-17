@@ -14,7 +14,7 @@
         
         <Grid.RowDefinitions>
             <RowDefinition Height="100" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="100" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -23,7 +23,7 @@
         </Grid.ColumnDefinitions> 
        
        
-  <TextBlock Height="100" FontFamily="Cambria" FontSize="50 pt" x:Name="taskName"  TextWrapping="Wrap" 
+  <TextBlock Height="90" FontFamily="Cambria" FontSize="50 pt" x:Name="taskName"  TextWrapping="Wrap" 
                  > Nazwa zadania</TextBlock>
 
              <ListBox Grid.Row="1" x:Name="lstNames" />
