@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FocusToolTaskBanner"
         mc:Ignorable="d"
-        Title="Focus Tool Task Banner" Height="200" Width="800"
+        Title="Focus Tool Task Banner" Height="350" Width="800"
          Topmost="{Binding Source={x:Static Application.Current},Path=MainWindow.IsActive,Mode=OneWay}"
         Icon="/images/focus.ico">  
   
@@ -13,8 +13,8 @@
  <Grid Margin="10">
         
         <Grid.RowDefinitions>
-            <RowDefinition Height="100" />
-            <RowDefinition Height="100" />
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="150" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -23,14 +23,16 @@
         </Grid.ColumnDefinitions> 
        
        
-  <TextBlock Height="90" FontFamily="Cambria" FontSize="50 pt" x:Name="taskName"  TextWrapping="Wrap" 
+  <TextBlock Height="Auto" FontFamily="Cambria" FontSize="50 pt" x:Name="taskName" TextWrapping="Wrap"
                  > Nazwa zadania</TextBlock>
 
-             <ListBox Grid.Row="1" x:Name="lstNames" />
+          
 
         <StackPanel Grid.Row="1" Grid.Column="0" Margin="5,0,0,0">
-        <TextBox x:Name="txtName" />
+        
+        <TextBox x:Name="txtName"  AcceptsReturn="True"  />
     <Button x:Name="btnAdd" Margin="0,5,0,0" Click="ButtonAddName_Click">Dodaj</Button>
+  <ListBox Grid.Row="1" x:Name="lstNames" />
 </StackPanel>
     </Grid>
 </Window>
