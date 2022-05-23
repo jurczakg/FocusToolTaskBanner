@@ -32,6 +32,7 @@
         
         <TextBox x:Name="txtName"  AcceptsReturn="True"  />
     <Button x:Name="btnAdd" Margin="0,5,0,0" Click="ButtonAddName_Click">Praca</Button>
+     <Button x:Name="btnSave" Margin="0,5,0,0" Click="ButtonSave_Click">Zapisz</Button>
   <ListBox Grid.Row="1" x:Name="lstNames" />
 </StackPanel>
     </Grid>
